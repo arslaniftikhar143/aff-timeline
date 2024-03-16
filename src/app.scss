@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.timeline__video__container {
+  height: 2500px;
+  width: 100%;
+}
+
+.timeline__video__holder {
+  position: sticky;
+  top: 0;
+}
+
+.timeline__video__container__video {
+  height: 95vh;
+  width: 100%;
+  object-fit: contain;
+}
+
+// --------------------
+
+.Timeline__Section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1em 0;
+  padding-bottom: 0;
+  margin-top: 3em;
+  height: fit-content;
+}
+.Timeline_Section_content {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 3em 7em;
+  display: flex;
+}
+.Timeline_Sectioncontent_left {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+
+  padding-bottom: 0;
+}
+
+.Timeline_Sectioncontentleft_main {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  position: sticky;
+  top: 2em;
+  max-height: fit-content;
+}
+
+.Timeline_Sectioncontentleftcontent_heading {
+  font-size: 18px;
+  color: #d1d1d1;
+  font-weight: 600;
+  // margin-right: 2em;
+  width: 90px;
+}
+.active-scroll-spy {
+  color: #d64c00;
+  z-index: 1;
+  font-size: 22px;
+  // margin-right: 2em;
+  width: 90px;
+}
+.Timeline_Sectioncontentleft_content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  text-decoration: none;
+}
+.Timeline_Sectioncontentleftcontent_dot {
+  background-color: #858585;
+  // padding: 0.4em;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 0 0 0 6px #f8f6f6;
+}
+.Timeline_Sectioncontentleftcontent_dot::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 100%;
+  height: 3em;
+  width: 1px;
+  z-index: -1;
+  background-color: #858585;
+}
+.Timeline_Sectioncontentleft_content {
+  margin-bottom: 1em;
+}
+.Timeline_Sectioncontent_left:last-child
+  .Timeline_Sectioncontentleftcontent_dot::after {
+  display: none;
+}
+
+.Timeline_Sectioncontent_right {
+  width: 85%;
+}
+.Timeline_Sectioncontentright_content {
+  max-width: 600px;
+  margin-bottom: 4em;
+}
+.Timeline_Sectioncontentrightcontent_subheading {
+  font-size: 20px;
+  font-weight: 700;
+  height: 22px;
+  color: #d64c00;
+}
+.Timeline_Sectioncontentrightcontent_heading {
+  font-size: 32px;
+  color: #7d7d7d;
+}
+.Timeline_Sectioncontentrightcontentheading_span {
+  font-size: 32px;
+  color: #000;
+}
+.Timeline_Sectioncontentrightcontent_info {
+  font-size: 18px;
+  line-height: 30px;
+  color: #000;
+  margin-bottom: 1em;
+}
